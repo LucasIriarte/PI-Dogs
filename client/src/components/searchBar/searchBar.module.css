@@ -1,0 +1,16 @@
+.containerSearchBar {
+    margin: 20px auto;
+}
+
+.inputSearchBar {
+    border-radius: 17px;
+    outline: none;
+    border: none;
+    height: 30px;
+    padding:0 0 0 15px;
+    background-color: #886831;
+}
+.inputSearchBar::placeholder {
+    color: #d4911c;
+    font-weight: bold;
+}

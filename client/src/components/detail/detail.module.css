@@ -1,0 +1,87 @@
+.containerCardDetail {
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-vector/seamless-animal-pattern-background-cute-paw-print-vector-illustration_53876-156206.jpg?w=2000);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.filterContainerCardDetail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(126, 64, 0, 0.6);
+}
+
+.cardDetail {
+    width: 400px;
+    height: 700px;
+    height: fit-content;
+    background-color: #7b5518;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.containerImgDetail {
+    width: 100%;
+}
+
+.textCard {
+    color: #412a06;
+}
+
+.imgCardDetail {
+    width: 100%;
+}
+
+.containerLoading {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/464/046/small/dog_and_cat_pattern-17.jpg);
+    height: 100vh;
+    width: 100vw;
+}
+
+.loadingFilter {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(126,74,21,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textLoading {
+    
+    border-radius: 14px;
+    padding: 10px;
+    font-size: 3rem;
+    background-color: rgba(126,74,21,0.5);
+    backdrop-filter: blur(2px);
+    animation: parpadeo;
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }

@@ -1,0 +1,33 @@
+.containerNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5A4421;
+}
+
+.conatinerLinks {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.linksNavBar {
+    text-decoration: none;
+    color: #A8803E;
+    font-weight: bold;
+    padding: 5px 9px;
+    background-color: #6a5026;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.linksNavBar:hover {
+    color: #6a5026;
+    background-color: #A8803E;
+}
+
+.logoPage {
+    height: 70px;
+    width: auto;
+}

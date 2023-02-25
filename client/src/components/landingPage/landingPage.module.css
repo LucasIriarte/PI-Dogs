@@ -1,0 +1,43 @@
+.backgroundLandingPage {
+    background-image: url(https://w0.peakpx.com/wallpaper/698/466/HD-wallpaper-rhodesian-ridgebacks-brown-dog-pets-lawn-dogs-cute-animals-rhodesian-ridgebacks-dog.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.filterBackgroundLandingPage {
+    position: relative;
+    background-color: rgba(160, 80, 0, .3);
+    height: 100%;
+    width: 100%;
+}
+
+.navLink {
+    background-color: #9e7d48;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #e9a63b;
+    font-weight: bold;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    animation-name: expand;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes expand {
+    0% {
+        scale: 1.0;
+    }
+    50% {
+        scale: 1.04;
+        box-shadow: 0 0 5px 1px #000;
+    }
+    100% {
+        scale: 1.0;
+    }
+}
