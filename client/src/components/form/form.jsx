@@ -47,6 +47,10 @@ const Form = () => {
         if (!input.minLifeSpan || !input.maxLifeSpan) {
             errors.lifeSpan = "Life span is required (min & max)"
         }
+        if (!errors.lifeSpan && input.minLifeSpan >= input.maxLifeSpan) {
+            errors.invalidLifeSpan = "Max life span not exceeds min life span"
+        }
+        console.log(errors)
         return errors
     }
 
@@ -144,6 +148,7 @@ const Form = () => {
                         <input type="number" name="minLifeSpan" value={infoForm.minLifeSpan} placeholder="Type a min life span..." onChange={handleChange} min="1" className={styles.inputsForm} />
                         <input type="number" name="maxLifeSpan" value={infoForm.maxLifeSpan} placeholder="Type a max life span..." onChange={handleChange} min="1" className={styles.inputsForm} />
                         {errors.lifeSpan && <span className={styles.labelErrors}>{errors.lifeSpan}</span>}
+                        {errors.invalidLifeSpan && <span className={styles.labelErrors}>{errors.invalidLifeSpan}</span>}
                     </div>
                     {Object.entries(errors).length === 0 && infoForm.name !== "" ? <button type="submit" onClick={handleSubmit} className={styles.btnSubmitForm}>Create</button> : null}
                     {Object.entries(submit).length !== 0?<label className={styles.labelCreated}>Created!</label>:null}
