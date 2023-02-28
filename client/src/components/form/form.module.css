@@ -84,7 +84,15 @@
     width: 19px;
     margin-left: 5px;
     border: .2px solid #4f3c09;
+    color: #4f3c09;
     background-color: #ba6300;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.deleteTemperament:hover {
+    background-color: #4f3c09;
+    color: #ba6300;
 }
 
 .containerTemperamentsSelected {

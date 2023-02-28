@@ -41,23 +41,6 @@ const Detail = () => {
                 </div>
             </div>
         )
-    // return (
-    //     <div className={styles.containerCardDetail}>
-    //         <NavBar/>
-    //         <div className={styles.filterContainerCardDetail}>
-    //             <div className={styles.cardDetail}>
-    //                 <div className={styles.containerImgDetail}>
-    //                     <img src={dogDetail.image} alt="dog" className={styles.imgCardDetail} />
-    //                 </div>
-    //                 <h3 className={styles.textCard}>Name: {dogDetail.name}</h3>
-    //                 <h3 className={styles.textCard}>Height: {dogDetail.height}</h3>
-    //                 <h3 className={styles.textCard}>Weight: {dogDetail.weight}</h3>
-    //                 <h3 className={styles.textCard}>Temperaments: {dogDetail.temperaments}</h3>
-    //                 <h3 className={styles.textCard}>Life Span: {dogDetail.lifeSpan}</h3>
-    //             </div>
-    //         </div>
-    //     </div>
-    // )
 }
 
 export default Detail

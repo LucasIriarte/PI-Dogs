@@ -50,7 +50,6 @@ const Form = () => {
         if (!errors.lifeSpan && input.minLifeSpan >= input.maxLifeSpan) {
             errors.invalidLifeSpan = "Max life span not exceeds min life span"
         }
-        console.log(errors)
         return errors
     }
 
