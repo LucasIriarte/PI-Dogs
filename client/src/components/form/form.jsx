@@ -32,13 +32,13 @@ const Form = () => {
         if (!input.minHeight || !input.maxHeight) {
             errors.height = "Height is required (min & max)"
         }
-        if (!errors.height && input.minHeight >= input.maxHeight) {
+        if (!errors.height && input.minHeight - input.maxHeight >= 0) {
             errors.heightInvalid = "Max height not exceeds min height"
         }
         if (!input.minWeight || !input.maxWeight) {
             errors.weight = "Weight is required (min & max)"
         }
-        if (!errors.weight && input.minWeight >= input.maxWeight) {
+        if (!errors.weight && input.minWeight - input.maxWeight >= 0) {
             errors.weightInvalid = "Max weight not exceeds min weight"
         }
         if (input.temperaments.length === 0) {
@@ -47,7 +47,7 @@ const Form = () => {
         if (!input.minLifeSpan || !input.maxLifeSpan) {
             errors.lifeSpan = "Life span is required (min & max)"
         }
-        if (!errors.lifeSpan && input.minLifeSpan >= input.maxLifeSpan) {
+        if (!errors.lifeSpan && input.minLifeSpan - input.maxLifeSpan >= 0) {
             errors.invalidLifeSpan = "Max life span not exceeds min life span"
         }
         return errors
