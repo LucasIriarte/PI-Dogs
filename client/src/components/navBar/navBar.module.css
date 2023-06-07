@@ -31,3 +31,13 @@
     height: 70px;
     width: auto;
 }
+
+.profileNavBar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 3rem;
+    height: 3rem;
+}
+.pictureProfileNavBar {
+    width: 100%;
+}

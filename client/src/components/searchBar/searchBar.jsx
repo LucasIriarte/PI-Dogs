@@ -8,8 +8,9 @@ export default function SearchBar() {
     const [name, setName] = useState("")
     const dispatch = useDispatch()
     const handleChange = (e) => {
-        setName(e.target.value)
-        dispatch(getDogByName(name))
+        const newName = e.target.value;
+        setName(newName);
+        dispatch(getDogByName(newName));
     }
 
     return (

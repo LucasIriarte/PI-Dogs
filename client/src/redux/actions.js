@@ -18,7 +18,7 @@ import {
 export const getAllDogs = () => {
     return async (dispatch) => {
         try {
-            const response = (await axios.get('http://localhost:3001/dogs')).data
+            const response = (await axios.get('/dogs')).data
             dispatch({
                 type: GET_ALL_DOGS,
                 payload: response
@@ -35,7 +35,7 @@ export const getAllDogs = () => {
 export const getDogByName = (name) => {
     return async (dispatch) => {
         try {
-            const response = (await axios.get(`http://localhost:3001/dogs?name=${name}`)).data
+            const response = (await axios.get(`/dogs?name=${name}`)).data
             dispatch({
                 type: GET_DOG_BY_NAME,
                 payload: response
@@ -52,7 +52,7 @@ export const getDogByName = (name) => {
 export const getTemperaments = () => {
     return async (dispatch) => {
         try {
-            const response = (await axios.get('http://localhost:3001/temperaments')).data
+            const response = (await axios.get('/temperaments')).data
             dispatch({
                 type: GET_TEMPERAMENTS,
                 payload: response
@@ -87,7 +87,7 @@ export const filterByBreeds = (breeds) => {
 export const getDetail = (id) => {
     return async (dispatch) => {
         try {
-            const response = (await axios.get(`http://localhost:3001/dogs/${id}`)).data
+            const response = (await axios.get(`/dogs/${id}`)).data
             dispatch({
                 type: GET_DETAIL,
                 payload: response
@@ -132,7 +132,7 @@ export const createDog = (info) => {
     } = info
     const cleanTemps = temperaments.map((temperament) => temperament.name)
     return async (dispatch) => {
-        await axios.post('http://localhost:3001/dogs', {
+        await axios.post('/dogs', {
                 name,
                 minHeight,
                 maxHeight,
@@ -152,7 +152,7 @@ export const createDog = (info) => {
 export const deleteCard = (id) => {
     return async(dispatch) => {
         try {
-            const response = (await axios.delete(`http://localhost:3001/dogs/${id}`)).data
+            const response = (await axios.delete(`/dogs/${id}`)).data
             dispatch({
                 type:DELETE_CARD,
                 payload:response
