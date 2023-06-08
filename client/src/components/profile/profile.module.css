@@ -1,0 +1,43 @@
+@import "../../variables.css";
+
+.containerProfile {
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/464/046/small/dog_and_cat_pattern-17.jpg);
+    height: 100vh;
+}
+
+.filterBackgroundProfile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(126,74,21,0.5);
+}
+
+.profileCard {
+    background-color: rgba(136, 104, 49);
+    backdrop-filter: blur(10px);
+    border-radius: 5%;
+    width: 50%;
+    height: 70%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imgProfile {
+    margin-top: 3rem;
+    border-radius: 100%;
+    height: 9rem;
+}
+
+.conatinerArrowBack {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.cardH3 {
+    background-color: #c399387e;
+    padding: .5rem;
+    margin: 1rem;
+    border-radius: .5rem;
+}

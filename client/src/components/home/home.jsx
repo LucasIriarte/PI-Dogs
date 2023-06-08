@@ -5,6 +5,7 @@ import Card from '../card/card.jsx'
 import NavBar from "../navBar/navBar"
 import SearchBar from "../searchBar/searchBar"
 import styles from './home.module.css'
+import { Loading } from "../loading/loading"
 
 
 
@@ -96,11 +97,7 @@ const Home = () => {
     }
     else {
         return (
-            <div className={styles.containerLoading}>
-                <div className={styles.loadingFilter}>
-                    <span className={styles.textLoading}>Loading...</span>
-                </div>
-            </div>
+            <Loading/>
         )
     }
 

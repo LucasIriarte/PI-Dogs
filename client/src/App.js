@@ -6,6 +6,7 @@ import LangingPage from './components/landingPage/landingPage.jsx';
 import Detail from './components/detail/detail';
 import Profile from './components/profile/profile';
 import axios from 'axios';
+import ProtectedRoute from './components/protectedRoute/protectedRoute';
 axios.defaults.baseURL = "http://localhost:3001/"
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
           <Home/>
         </Route>
         <Route exact path="/form">
-          <Form/>
+          <ProtectedRoute component={Form}/>
         </Route>
         <Route exact path="/profile">
            <Profile/>
