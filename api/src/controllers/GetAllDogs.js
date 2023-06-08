@@ -25,7 +25,7 @@ const GetAllDogs = async () => {
                 return{
                     id:dog.dataValues.id,
                     name:dog.dataValues.name,
-                    image:"https://www.pupnames.com/assets/icons/brown-c80c33a875af31eff384bbc80bf3fed07d25441f6cdc9efd3f98b0b8ffe49c3e.svg",
+                    image:"https://static.vecteezy.com/system/resources/previews/001/200/028/non_2x/dog-png.png",
                     weight:dog.dataValues.weight + " lb",
                     temperaments:dog.dataValues.Temperaments.map((temperament) => " " + temperament.name).toString().slice(1)
                 }

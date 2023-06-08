@@ -20,7 +20,7 @@ const GetDogById = async (id) => {
         })
         return {
             id: dogDb.id,
-            image: "https://www.pupnames.com/assets/icons/brown-c80c33a875af31eff384bbc80bf3fed07d25441f6cdc9efd3f98b0b8ffe49c3e.svg",
+            image: "https://static.vecteezy.com/system/resources/previews/001/200/028/non_2x/dog-png.png",
             name: dogDb.name,
             temperaments: dogDb.Temperaments.map((temperament) => " " + temperament.name).toString().slice(1),
             height: dogDb.height + " in",
