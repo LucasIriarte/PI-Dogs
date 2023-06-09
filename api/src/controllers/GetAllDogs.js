@@ -1,10 +1,11 @@
 const axios = require('axios')
 const {Dog, Temperament} = require('../db.js')
-
+require('dotenv').config()
+const { DOGS_API_KEY } = process.env
 
 const GetAllDogs = async () => {
     //traigo la info, itero, y me quedo con la info necesaria
-        const info = (await axios.get('https://api.thedogapi.com/v1/breeds?api_key=live_4LI6PEy0H8gPBkPM3LfvYFm9Bm31ZNvRII331qgMrHvF70oxb1Q8aEx5r2CGT3P4')).data
+        const info = (await axios.get(`https://api.thedogapi.com/v1/breeds?api_key=${DOGS_API_KEY}`)).data
         const mapInfoApi = info.map(e => {
             return {
                 id: e.id,
