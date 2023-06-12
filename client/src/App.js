@@ -7,7 +7,7 @@ import Detail from './components/detail/detail';
 import Profile from './components/profile/profile';
 import axios from 'axios';
 import ProtectedRoute from './components/protectedRoute/protectedRoute';
-axios.defaults.baseURL = "http://localhost:3001/"
+axios.defaults.baseURL = "https://pi-dogs-production-61cb.up.railway.app/"
 
 function App() {
   return (
