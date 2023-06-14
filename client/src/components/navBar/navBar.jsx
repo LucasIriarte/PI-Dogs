@@ -12,9 +12,6 @@ const NavBar = () => {
             <div className={styles.conatinerLinks}>
                 <NavLink to="/home" className={styles.linksNavBar}>Home</NavLink>
                 <NavLink to="/form" className={styles.linksNavBar}>Create</NavLink>
-                {!user?<NavLink to="#" onClick={() => loginWithRedirect()} className={styles.linksNavBar}>
-                    Login
-                </NavLink>: <NavLink to="/profile" className={styles.profileNavBar}><img src={user.picture} className={styles.pictureProfileNavBar}/></NavLink>}
             </div>
         </div>
     )
